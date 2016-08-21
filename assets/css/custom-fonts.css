@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/custom/proximanova-bold.eot');
+    src: url('../fonts/custom/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/proximanova-bold.woff2') format('woff2'),
+         url('../fonts/custom/proximanova-bold.woff') format('woff'),
+         url('../fonts/custom/proximanova-bold.ttf') format('truetype'),
+         url('../fonts/custom/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/custom/proximanova-regular.eot');
+    src: url('../fonts/custom/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/proximanova-regular.woff2') format('woff2'),
+         url('../fonts/custom/proximanova-regular.woff') format('woff'),
+         url('../fonts/custom/proximanova-regular.ttf') format('truetype'),
+         url('../fonts/custom/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular_italic';
+    src: url('../fonts/custom/proximanova-regularitalic.eot');
+    src: url('../fonts/custom/proximanova-regularitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/proximanova-regularitalic.woff2') format('woff2'),
+         url('../fonts/custom/proximanova-regularitalic.woff') format('woff'),
+         url('../fonts/custom/proximanova-regularitalic.ttf') format('truetype'),
+         url('../fonts/custom/proximanova-regularitalic.svg#proxima_novaregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'skolarregular';
+    src: url('../fonts/custom/skolar-regular-pvt.eot');
+    src: url('../fonts/custom/skolar-regular-pvt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/skolar-regular-pvt.woff2') format('woff2'),
+         url('../fonts/custom/skolar-regular-pvt.woff') format('woff'),
+         url('../fonts/custom/skolar-regular-pvt.ttf') format('truetype'),
+         url('../fonts/custom/skolar-regular-pvt.svg#skolarregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

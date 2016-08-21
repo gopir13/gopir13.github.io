@@ -1,0 +1,211 @@
+html, body{
+    height: 100%;
+    font-family: 'skolarregular', serif;
+    color: #222222;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.sidebar{
+    background:#dadada url('../images/hero-image.jpg') no-repeat center center;
+    position: fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+.sidebar .hero-info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 175px;
+    margin: auto;
+    width: 93%;
+    height: 200px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.sidebar .hero-info > span{
+    white-space: nowrap;
+}
+
+.sidebar .hero-info hr{
+    border-color: #e64b3e;
+}
+.sidebar .contact{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 20px auto 50px;
+    color: white;
+    font-size: 30px;
+}
+.sidebar .contact .fa{
+    color: white;
+    text-decoration: none;
+    margin: 25px 0 0;
+}
+.sidebar .contact a.fa:hover{
+    color:#138be8;
+}
+.sidebar .contact .fa-dot-circle-o{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.31);
+    margin: 0 10px 13px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.text-highlight{
+    color:#e64b3e;
+}
+
+.about .h1{
+    font-size: 36px;
+}
+.about .h1:after, .block h2:after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #222222;
+    display: block;
+    margin: 30px auto 25px;
+}
+.about p{
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 48px;
+}
+
+.block{
+    border-bottom: 2px solid #f5f5f5;
+    padding: 130px 0;
+    display: inline-block;
+    width: 100%;
+}
+.block:first-child{
+    padding-top: 80px;
+}
+
+.block h2{
+    font-family: "proxima_nova_rgbold", sans-serif;
+    font-size: 50px;
+}
+.block .title{
+    font-family: "proxima_nova_rgbold", sans-serif;
+    font-size: 20px;
+    color: #999999;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.inner-wrapper{
+    margin: 0px 30px;
+}
+
+.sub-title{
+    font-family: "proxima_nova_rgregular", sans-serif;
+    color: #999999;
+    line-height: 24px;
+}
+
+#shotsByPlayerId{
+    list-style: none;
+    margin: 50px 0 0;
+    padding: 0;
+}
+#shotsByPlayerId .col-md-4{
+    padding: 0;
+    position: relative;
+    height: 315px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+#shotsByPlayerId > .col-md-4 > img{
+    height: 100%;
+}
+#shotsByPlayerId .col-md-4 h3{
+    opacity: 0;
+    position: absolute;
+    padding: 130px 0 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#shotsByPlayerId .col-md-4 h3 > a{
+    color:#e64b3e;
+    text-decoration: none;
+    display: block;
+}
+#shotsByPlayerId .col-md-4 h3 > a:hover{
+    color:#138be8;
+}
+#shotsByPlayerId .col-md-4 h3:hover{
+    opacity: 1;
+}
+#shotsByPlayerId .col-md-4 h3 > span{
+    color: #fff;
+    position: relative;
+}
+#shotsByPlayerId .col-md-4 h3 > span:after{
+    content: "";
+    background: #fff;
+    width: 50px;
+    height: 1px;
+    display: block;
+    margin: 10px auto;
+}
+#shotsByPlayerId .col-md-4 h3:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+}
+.carousel-control{
+    background: none !important;
+}
+
+#carousel-example-generic{
+    margin: 50px 0 0;
+}
+
+.footer{
+    font-family: "proxima_nova_rgregular", sans-serif;
+    color: #999999;
+    line-height: 24px;
+    padding: 50px 0;
+}
+
+::selection{
+    background-color: #e64b3e;
+    color: #ffffff;
+}
+
+.cssawardnominee{
+    position: fixed;
+    right: 0;
+    top: 70px;
+    z-index: 999;
+}
+
+
+@media (max-width: 992px){
+    .sidebar{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .sidebar .hero-info, .sidebar .contact{
+        position: static;
+    }
+    .sidebar .hero-info{
+        margin: 210px 0;
+    }
+    #shotsByPlayerId .col-md-4{
+        height: auto;
+    }
+}
