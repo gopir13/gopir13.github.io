@@ -1,0 +1,329 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Koala\/rubygems\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\000033}}
+* {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\000038}}
+.btn-default {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000314}}
+  .btn-default:hover {
+    background: #fff;
+    color: #102D38;
+    border: 1px solid #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000321}}
+.img-responsive {
+  margin: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000325}}
+.btn-primary {
+  font-size: 14px;
+  color: #5243A0;
+  font-weight: bold;
+  background: #FFE34E;
+  border: none;
+  padding: 14px;
+  min-width: 245px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000338}}
+h5 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000345}}
+h3 {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-bottom: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000351}}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000359}}
+.navbar-toggle .icon-bar {
+  background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000362}}
+  .navbar-toggle .icon-bar:first-child {
+    margin-left: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000366}}
+  .navbar-toggle .icon-bar:first-child, .navbar-toggle .icon-bar:last-child {
+    width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_components\.scss}line{font-family:\0000372}}
+video {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\000033}}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: #102D38;
+  background: #42338B; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000311}}
+.navbar {
+  margin: 30px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000314}}
+  .navbar .navbar-brand {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000317}}
+  .navbar a {
+    color: #fff;
+    font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000323}}
+  .navbar .navbar-nav > li a:hover {
+    background: none;
+    color: #102D38; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000329}}
+  .navbar .nav .open > a, .navbar .nav a:focus, .navbar .nav .open > a:focus, .navbar .nav .open > a:hover {
+    background: none;
+    color: #102D38; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000335}}
+  .navbar .btn-holder > a {
+    padding: 0;
+    margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000342}}
+.blank_space {
+  display: inline-block;
+  width: 100%;
+  height: 45px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000348}}
+section {
+  background-color: #fff;
+  position: relative;
+  max-width: 1366px;
+  margin: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000355}}
+#header {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjgwJSIgY3k9IjgwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYTg3NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZlN2U3NiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-radial-gradient(80% 80%, #ffa877 0%, #fe7e76 100%);
+  background-image: radial-gradient(80% 80%, #ffa877 0%, #fe7e76 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000362}}
+  #header .hero-content {
+    position: relative;
+    z-index: 9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000367}}
+  #header .business-steps {
+    margin-top: -238px;
+    margin-bottom: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000372}}
+  #header h5 {
+    color: #5243A0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000375}}
+  #header h3 {
+    color: #ffffff;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000379}}
+  #header h1 {
+    color: #ffffff;
+    margin-bottom: 35px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000385}}
+#explanation {
+  background: #594AAA;
+  border-top: 15px solid #42338B;
+  margin-top: 815px;
+  position: relative;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\0000392}}
+  #explanation .question {
+    background: #595968;
+    border-radius: 10px;
+    color: #BCBCCC;
+    padding: 25px 25px 10px;
+    margin-top: -100px;
+    margin-bottom: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003100}}
+    #explanation .question > strong {
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003107}}
+    #explanation .question p {
+      margin-bottom: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003111}}
+  #explanation .character {
+    margin-bottom: -20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003116}}
+#gamification {
+  background: #BFE5FC;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003120}}
+  #gamification iframe {
+    width: 100%;
+    height: 500px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003125}}
+  #gamification .game-footer {
+    background: #485265; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003128}}
+    #gamification .game-footer > .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      max-height: 85px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003134}}
+      #gamification .game-footer > .container > .step {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 60px;
+        min-width: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003141}}
+        #gamification .game-footer > .container > .step > .count {
+          position: relative;
+          display: inline-block;
+          margin: 0 0 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003146}}
+          #gamification .game-footer > .container > .step > .count > span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003157}}
+        #gamification .game-footer > .container > .step > p {
+          color: #ffffff;
+          font-size: 13px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003166}}
+#conclution {
+  padding: 30px 0;
+  z-index: 4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003170}}
+  #conclution h5 {
+    color: #EF4036; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003173}}
+  #conclution h3 {
+    color: #102D38; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003176}}
+  #conclution h1 {
+    color: #102D38; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003181}}
+#footer {
+  padding: 30px;
+  border-top: 1px solid #edf3f7;
+  font-size: 12px;
+  color: #BCBCCC;
+  z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003188}}
+  #footer .fa-heart {
+    color: #EF4036; }
+
+@media (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003195}}
+  #header .business-steps {
+    margin-top: -190px; } }
+@media (max-width: 990px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003201}}
+  #header .business-steps {
+    margin-top: -100px; } }
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/startupmafia\.club\/dev\/startupmafia_static\/business_model\/sass\/assets\/_layout\.scss}line{font-family:\00003207}}
+  #header .business-steps {
+    margin-top: 0; } }
+
+/*# sourceMappingURL=screen.css.map */
