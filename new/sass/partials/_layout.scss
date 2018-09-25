@@ -28,13 +28,10 @@ h2 {
   font-family: $serif;
   color: $darkercolor;
   font-size: 38px;
-  line-height: 52px;
+  line-height: 1.5em;
   margin: 0 0 30px;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-device-width: 360px) {
-  .wrapper {
-    width: 100vw;
-  }
+.mobile-menu {
+  display: none;
 }

@@ -1,0 +1,167 @@
+@import 'compass/css3';
+@import 'variables';
+
+/* Smartphones ----------- */
+@media only screen and (max-device-width: 768px) {
+  body {
+    font-size: 4vw;
+  }
+
+  .homescreen {
+    position: relative;
+
+    & > .container {
+      & > .photo {
+        float: none;
+        height: auto;
+        width: 100%;
+
+        & > img {
+          position: relative;
+        }
+      }
+      & > .home-content {
+        position: relative;
+        left: auto;
+        margin-top: -20vh;
+        bottom: auto;
+        padding: 5vw;
+
+        & > p {
+          font-size: 5vw;
+          margin: 0 0 5vh;
+
+          &.self-desc {
+            font-size: 8vw;
+          }
+        }
+
+        & > h1.intro {
+          font-size: 5.5vw;
+          margin: 0 0 5vh;
+        }
+
+        & a {
+          font-size: 4vw;
+        }
+
+        & .logo {
+          margin: 5vh 0;
+          width: 25vw;
+        }
+      }
+    }
+  }
+  .wrapper {
+    width: 100vw;
+    height: auto;
+  }
+  .portfolio {
+    margin-top: 0;
+
+    & > .navigation {
+      display: none;
+    }
+    & > .content {
+      margin-left: 0;
+
+      & > div {
+        padding: 0;
+
+        & h2 {
+          font-size: 6vw;
+          margin: 5vh 5vw 2vh;
+        }
+      }
+
+      & #shots {
+        & > a {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    & a {
+      color: $lightercolor;
+      padding: 5vw;
+      display: inline-block;
+      float: right;
+
+      & > .fa-times {
+        display: none;
+      }
+      & > .fa-bars {
+        display: inline-block;
+      }
+    }
+
+    & .menu-content {
+      display: none;
+    }
+
+    &.active {
+      background: $darkercolor;
+      width: 13vw;
+
+      & a {
+        & > .fa-times {
+          display: inline-block;
+        }
+        & > .fa-bars {
+          display: none;
+        }
+      }
+
+      & .menu-content {
+        display: inline-block;
+        width: 100%;
+
+        & > a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .homescreen {
+    & > .container {
+      & > .photo {
+        & > img {
+          bottom: -50px;
+        }
+      }
+
+      & > .home-content {
+        bottom: 120px;
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1400px) {
+  .homescreen {
+    & > .container {
+      & > .photo {
+        & > img {
+          bottom: 0;
+        }
+      }
+
+      & > .home-content {
+        bottom: 170px;
+      }
+    }
+  }
+}

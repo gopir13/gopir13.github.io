@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -107,17 +107,15 @@ h2 {
   font-family: "Alegreya", serif;
   color: #333745;
   font-size: 38px;
-  line-height: 52px;
+  line-height: 1.5em;
   margin: 0 0 30px;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-device-width: 360px) {
-  /* line 37, ../../sass/partials/_layout.scss */
-  .wrapper {
-    width: 100vw;
-  }
+/* line 35, ../../sass/partials/_layout.scss */
+.mobile-menu {
+  display: none;
 }
+
 /* line 4, ../../sass/partials/_home.scss */
 .homescreen {
   background-color: #333745;
@@ -159,28 +157,29 @@ h2 {
 .homescreen > .container > .home-content > p.self-desc {
   font-size: 38px;
   font-family: "Alegreya", serif;
-  line-height: 52px;
+  line-height: 1.4em;
 }
-/* line 42, ../../sass/partials/_home.scss */
-.homescreen > .container > .home-content > p.intro {
+/* line 44, ../../sass/partials/_home.scss */
+.homescreen > .container > .home-content > h1.intro {
   color: #f6f792;
   font-size: 24px;
   font-weight: 500;
   font-family: "Alegreya", serif;
-  line-height: 32px;
+  line-height: 1.4em;
+  margin: 0 0 30px;
 }
-/* line 51, ../../sass/partials/_home.scss */
+/* line 53, ../../sass/partials/_home.scss */
 .homescreen > .container > .home-content a {
   color: #daede2;
   text-decoration: none;
   position: relative;
 }
-/* line 56, ../../sass/partials/_home.scss */
+/* line 58, ../../sass/partials/_home.scss */
 .homescreen > .container > .home-content a > span {
   position: relative;
   z-index: 1;
 }
-/* line 60, ../../sass/partials/_home.scss */
+/* line 62, ../../sass/partials/_home.scss */
 .homescreen > .container > .home-content a::after {
   content: '';
   position: absolute;
@@ -199,59 +198,20 @@ h2 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 74, ../../sass/partials/_home.scss */
+/* line 76, ../../sass/partials/_home.scss */
 .homescreen > .container > .home-content a:hover::after {
   height: 21px;
 }
-/* line 80, ../../sass/partials/_home.scss */
-.homescreen > .container > .home-content img {
+/* line 82, ../../sass/partials/_home.scss */
+.homescreen > .container > .home-content .logo {
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -webkit-transform: rotate(-19deg);
+  transform: rotate(-19deg);
   display: block;
   margin-top: 30px;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* line 93, ../../sass/partials/_home.scss */
-  .homescreen > .container > .photo > img {
-    bottom: -50px;
-  }
-  /* line 98, ../../sass/partials/_home.scss */
-  .homescreen > .container > .home-content {
-    bottom: 120px;
-  }
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1400px) {
-  /* line 110, ../../sass/partials/_home.scss */
-  .homescreen > .container > .photo > img {
-    bottom: 0;
-  }
-  /* line 115, ../../sass/partials/_home.scss */
-  .homescreen > .container > .home-content {
-    bottom: 170px;
-  }
-}
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-device-width: 360px) {
-  /* line 125, ../../sass/partials/_home.scss */
-  .homescreen > .container > .photo {
-    float: none;
-    height: auto;
-    width: 100%;
-  }
-  /* line 130, ../../sass/partials/_home.scss */
-  .homescreen > .container > .photo > img {
-    position: relative;
-  }
-  /* line 134, ../../sass/partials/_home.scss */
-  .homescreen > .container > .home-content {
-    position: relative;
-    left: auto;
-    margin-top: -20vh;
-    bottom: auto;
-    padding: 5vw;
-  }
-}
 /* line 4, ../../sass/partials/_portfolio.scss */
 .portfolio {
   background: white;
@@ -402,4 +362,162 @@ h2 {
   -webkit-box-shadow: rgba(51, 55, 69, 0.3) 0px 5px 20px;
   box-shadow: rgba(51, 55, 69, 0.3) 0px 5px 20px;
   z-index: 10;
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-device-width: 768px) {
+  /* line 6, ../../sass/partials/_responsive.scss */
+  body {
+    font-size: 4vw;
+  }
+
+  /* line 10, ../../sass/partials/_responsive.scss */
+  .homescreen {
+    position: relative;
+  }
+  /* line 14, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .photo {
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+  /* line 19, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .photo > img {
+    position: relative;
+  }
+  /* line 23, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content {
+    position: relative;
+    left: auto;
+    margin-top: -20vh;
+    bottom: auto;
+    padding: 5vw;
+  }
+  /* line 30, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content > p {
+    font-size: 5vw;
+    margin: 0 0 5vh;
+  }
+  /* line 34, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content > p.self-desc {
+    font-size: 8vw;
+  }
+  /* line 39, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content > h1.intro {
+    font-size: 5.5vw;
+    margin: 0 0 5vh;
+  }
+  /* line 44, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content a {
+    font-size: 4vw;
+  }
+  /* line 48, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content .logo {
+    margin: 5vh 0;
+    width: 25vw;
+  }
+
+  /* line 55, ../../sass/partials/_responsive.scss */
+  .wrapper {
+    width: 100vw;
+    height: auto;
+  }
+
+  /* line 59, ../../sass/partials/_responsive.scss */
+  .portfolio {
+    margin-top: 0;
+  }
+  /* line 62, ../../sass/partials/_responsive.scss */
+  .portfolio > .navigation {
+    display: none;
+  }
+  /* line 65, ../../sass/partials/_responsive.scss */
+  .portfolio > .content {
+    margin-left: 0;
+  }
+  /* line 68, ../../sass/partials/_responsive.scss */
+  .portfolio > .content > div {
+    padding: 0;
+  }
+  /* line 71, ../../sass/partials/_responsive.scss */
+  .portfolio > .content > div h2 {
+    font-size: 6vw;
+    margin: 5vh 5vw 2vh;
+  }
+  /* line 78, ../../sass/partials/_responsive.scss */
+  .portfolio > .content #shots > a {
+    width: 100%;
+  }
+
+  /* line 85, ../../sass/partials/_responsive.scss */
+  .mobile-menu {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+  /* line 92, ../../sass/partials/_responsive.scss */
+  .mobile-menu a {
+    color: #daede2;
+    padding: 5vw;
+    display: inline-block;
+    float: right;
+  }
+  /* line 98, ../../sass/partials/_responsive.scss */
+  .mobile-menu a > .fa-times {
+    display: none;
+  }
+  /* line 101, ../../sass/partials/_responsive.scss */
+  .mobile-menu a > .fa-bars {
+    display: inline-block;
+  }
+  /* line 106, ../../sass/partials/_responsive.scss */
+  .mobile-menu .menu-content {
+    display: none;
+  }
+  /* line 110, ../../sass/partials/_responsive.scss */
+  .mobile-menu.active {
+    background: #333745;
+    width: 13vw;
+  }
+  /* line 115, ../../sass/partials/_responsive.scss */
+  .mobile-menu.active a > .fa-times {
+    display: inline-block;
+  }
+  /* line 118, ../../sass/partials/_responsive.scss */
+  .mobile-menu.active a > .fa-bars {
+    display: none;
+  }
+  /* line 123, ../../sass/partials/_responsive.scss */
+  .mobile-menu.active .menu-content {
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 127, ../../sass/partials/_responsive.scss */
+  .mobile-menu.active .menu-content > a {
+    width: 100%;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* line 140, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .photo > img {
+    bottom: -50px;
+  }
+  /* line 145, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content {
+    bottom: 120px;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1400px) {
+  /* line 157, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .photo > img {
+    bottom: 0;
+  }
+  /* line 162, ../../sass/partials/_responsive.scss */
+  .homescreen > .container > .home-content {
+    bottom: 170px;
+  }
 }

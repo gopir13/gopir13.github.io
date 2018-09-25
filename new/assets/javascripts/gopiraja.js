@@ -38,6 +38,10 @@ $(document).ready(function() {
     },
   });
 
+  $('.mobile-menu').click(function(){
+    $(this).toggleClass('active');
+  });
+
   // WindowsSize();
   $('.home-content > a').on('click', function() {
     $('html, body').animate(

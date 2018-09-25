@@ -37,15 +37,17 @@
         &.self-desc {
           font-size: 38px;
           font-family: $serif;
-          line-height: 52px;
+          line-height: 1.4em;
         }
-        &.intro {
-          color: $highlightcolor;
-          font-size: 24px;
-          font-weight: 500;
-          font-family: $serif;
-          line-height: 32px;
-        }
+      }
+
+      & > h1.intro {
+        color: $highlightcolor;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $serif;
+        line-height: 1.4em;
+        margin: 0 0 30px;
       }
 
       & a {
@@ -77,66 +79,11 @@
         }
       }
 
-      & img {
+      & .logo {
+        @include transform(rotate(-19deg));
         display: block;
         margin-top: 30px;
       }
-    }
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .homescreen {
-    & > .container {
-      & > .photo {
-        & > img {
-          bottom: -50px;
-        }
-      }
-
-      & > .home-content {
-        bottom: 120px;
-      }
-    }
-  }
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1400px) {
-  .homescreen {
-    & > .container {
-      & > .photo {
-        & > img {
-          bottom: 0;
-        }
-      }
-
-      & > .home-content {
-        bottom: 170px;
-      }
-    }
-  }
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-device-width: 360px) {
-  .homescreen > .container {
-    & > .photo {
-      float: none;
-      height: auto;
-      width: 100%;
-
-      & > img {
-        position: relative;
-      }
-    }
-    & > .home-content {
-      position: relative;
-      left: auto;
-      margin-top: -20vh;
-      bottom: auto;
-      padding: 5vw;
     }
   }
 }
