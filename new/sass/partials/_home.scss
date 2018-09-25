@@ -1,0 +1,142 @@
+@import 'compass/css3';
+@import 'variables';
+
+.homescreen {
+  background-color: $darkercolor;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+
+  & > .container {
+    height: 100%;
+
+    & > .photo {
+      position: relative;
+      height: 100%;
+      width: 525px;
+      float: left;
+
+      & > img {
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    & > .home-content {
+      margin: auto;
+      position: absolute;
+      left: 490px;
+      bottom: 170px;
+
+      & > p {
+        color: $lightercolor;
+        font-size: 22px;
+        margin: 0 0 30px;
+
+        &.self-desc {
+          font-size: 38px;
+          font-family: $serif;
+          line-height: 52px;
+        }
+        &.intro {
+          color: $highlightcolor;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: $serif;
+          line-height: 32px;
+        }
+      }
+
+      & a {
+        color: $lightercolor;
+        text-decoration: none;
+        position: relative;
+
+        & > span {
+          position: relative;
+          z-index: 1;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          background: $brandcolor;
+          left: 0;
+          right: 0;
+          height: 10px;
+          bottom: -2px;
+          z-index: 0;
+          @include transition-property(height);
+          @include transition-duration(0.2s);
+        }
+
+        &:hover {
+          &::after {
+            height: 21px;
+          }
+        }
+      }
+
+      & img {
+        display: block;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .homescreen {
+    & > .container {
+      & > .photo {
+        & > img {
+          bottom: -50px;
+        }
+      }
+
+      & > .home-content {
+        bottom: 120px;
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1400px) {
+  .homescreen {
+    & > .container {
+      & > .photo {
+        & > img {
+          bottom: 0;
+        }
+      }
+
+      & > .home-content {
+        bottom: 170px;
+      }
+    }
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-device-width: 360px) {
+  .homescreen > .container {
+    & > .photo {
+      float: none;
+      height: auto;
+      width: 100%;
+
+      & > img {
+        position: relative;
+      }
+    }
+    & > .home-content {
+      position: relative;
+      left: auto;
+      margin-top: -20vh;
+      bottom: auto;
+      padding: 5vw;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+@import 'compass/css3';
+@import 'variables';
+
+.portfolio {
+  background: white;
+  z-index: 2;
+  margin-top: 100vh;
+  height: auto;
+  min-height: 100vh;
+
+  & > .navigation {
+    margin: 0 30px 0 0;
+    position: absolute;
+    height: 95vh;
+    left: 30px;
+    top: 30px;
+
+    &.fixed {
+      position: fixed;
+    }
+
+    & > .logo {
+      margin: 0 0 30px;
+      position: relative;
+    }
+
+    &:after {
+      content: '';
+      background: $lightercolor;
+      width: 1px;
+      left: 39.5px;
+      top: 64px;
+      bottom: 0;
+      position: absolute;
+      z-index: 0;
+    }
+
+    & .menu {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      margin: 10vh 0 0 28px;
+      padding: 7.5px 0;
+
+      & > li {
+        padding: 7.5px;
+
+        & > a {
+          text-decoration: none;
+          color: $darkercolor;
+          @include opacity(0);
+        }
+
+        &:before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          background: $lightercolor;
+          display: inline-block;
+          @include border-radius(100%);
+          margin: 2px 10px 2px 0;
+        }
+
+        &.active {
+          & > a {
+            @include opacity(1);
+            color: $brandcolor;
+          }
+          &:before {
+            background: $brandcolor;
+          }
+        }
+
+        &:hover {
+          & > a {
+            @include opacity(1);
+          }
+          &:before {
+            background: $darkercolor;
+          }
+        }
+      }
+    }
+
+    & .social-links {
+      display: block;
+      width: 60px;
+      background: #fff;
+      position: absolute;
+      z-index: 1;
+      left: 10px;
+      bottom: 0;
+      padding: 7.5px 0;
+
+      & a {
+        color: $lightcolor;
+        font-size: 18px;
+        padding: 15px;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+        &:hover {
+          color: $brandcolor;
+        }
+      }
+    }
+  }
+
+  & > .content {
+    margin-left: 210px;
+
+    & > div {
+      padding: 30px;
+
+      & h2 {
+        margin: 64px 0 30px;
+        display: inline-block;
+      }
+    }
+
+    & #shots {
+      // margin: -10px;
+
+      & a {
+        display: inline-block;
+        width: 33.33%;
+        // margin: 10px;
+
+        & > img {
+          width: 100%;
+          margin-bottom: -2px;
+        }
+      }
+
+      &:hover {
+        & > a {
+          @include opacity(0.3);
+          @include filter(grayscale(100%));
+
+          &.active {
+            @include opacity(1);
+            @include filter(grayscale(0));
+            @include box-shadow(rgba($darkercolor, 0.3) 0px 5px 20px);
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+}
