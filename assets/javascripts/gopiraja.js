@@ -15,7 +15,7 @@ $(document).ready(function() {
         $.each(data.reverse(), function(i, val) {
           var imageName = val.images.hidpi || val.images.normal;
 
-          $('#shots').prepend(
+          $('#shots').append(
             '<a class="shot" target="_blank" href="' +
               val.html_url +
               '" title="' +
@@ -38,7 +38,7 @@ $(document).ready(function() {
     },
   });
 
-  $('.mobile-menu').click(function(){
+  $('.mobile-menu').click(function() {
     $(this).toggleClass('active');
   });
 
@@ -86,16 +86,16 @@ $(document).ready(function() {
       );
   });
 });
-$(window).resize(WindowsSize);
+// $(window).resize(WindowsSize);
 
-var WindowsSize = function() {
-  var h = $(window).innerHeight(),
-    w = $(window).innerWidth();
+// var WindowsSize = function() {
+//   var h = $(window).innerHeight(),
+//     w = $(window).innerWidth();
 
-  console.log('window', w, h);
-  // $('.wrapper').css({ width: w, height: h });
-  // $('.portfolio').css({ 'margin-top': h });
-};
+//   console.log('window', w, h);
+//   // $('.wrapper').css({ width: w, height: h });
+//   // $('.portfolio').css({ 'margin-top': h });
+// };
 
 function onScroll(event) {
   var scrollPos = $(document).scrollTop();
@@ -106,17 +106,32 @@ function onScroll(event) {
     $('.portfolio .navigation').removeClass('fixed');
   }
 
+  scrollPos = scrollPos - 400;
+
   $('.menu a').each(function() {
     var currLink = $(this);
     var refElement = $(currLink.attr('href'));
-    if (
-      refElement.position().top <= scrollPos &&
-      refElement.position().top + refElement.height() > scrollPos
-    ) {
+    var elePos = refElement.position().top;
+
+    if (elePos <= scrollPos && elePos + refElement.height() > scrollPos) {
       $('.menu li').removeClass('active');
       currLink.parent().addClass('active');
     } else {
       currLink.parent().removeClass('active');
     }
   });
+}
+
+function openMenu(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName('tabcontent');
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
+  }
+  tablinks = document.getElementsByClassName('tablinks');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
+  }
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.className += ' active';
 }

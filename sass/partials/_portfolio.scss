@@ -14,6 +14,7 @@
     height: 95vh;
     left: 30px;
     top: 30px;
+    z-index: 4;
 
     &.fixed {
       position: fixed;
@@ -44,6 +45,7 @@
 
       & > li {
         padding: 7.5px;
+        cursor: pointer;
 
         & > a {
           text-decoration: none;
@@ -112,6 +114,8 @@
 
     & > div {
       padding: 30px;
+      display: inline-block;
+      width: 100%;
 
       & h2 {
         margin: 64px 0 30px;
@@ -147,5 +151,34 @@
         }
       }
     }
+  }
+}
+
+#photography {
+  & img {
+    max-width: 100%;
+  }
+}
+
+.article {
+  & p {
+    font-size: 22px;
+    line-height: 1.5em;
+    margin: 0 0 30px;
+    font-family: $serif;
+  }
+
+  & a {
+    color: $brandcolor;
+
+    &:hover {
+      color: $darkercolor;
+    }
+  }
+
+  & > img {
+    width: 360px;
+    float: right;
+    margin: 0 0 0 30px;
   }
 }

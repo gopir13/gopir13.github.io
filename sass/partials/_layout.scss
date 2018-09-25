@@ -4,6 +4,13 @@
 body {
   font-family: $sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
+  color: $darkercolor;
+}
+
+::selection {
+  background-color: $brandcolor;
+  color: #ffffff;
 }
 
 * {
@@ -32,6 +39,7 @@ h2 {
   margin: 0 0 30px;
 }
 
-.mobile-menu {
+.mobile-menu,
+.mobile-footer {
   display: none;
 }
