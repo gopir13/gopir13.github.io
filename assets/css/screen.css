@@ -383,21 +383,26 @@ h2 {
 }
 
 /* line 164, ../../sass/partials/_portfolio.scss */
-.article p {
+.article p, .article h3 {
   font-size: 22px;
   line-height: 1.5em;
   margin: 0 0 30px;
   font-family: "Alegreya", serif;
 }
-/* line 171, ../../sass/partials/_portfolio.scss */
+/* line 172, ../../sass/partials/_portfolio.scss */
+.article h3 {
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+/* line 177, ../../sass/partials/_portfolio.scss */
 .article a {
   color: #ea2e49;
 }
-/* line 174, ../../sass/partials/_portfolio.scss */
+/* line 180, ../../sass/partials/_portfolio.scss */
 .article a:hover {
   color: #333745;
 }
-/* line 179, ../../sass/partials/_portfolio.scss */
+/* line 185, ../../sass/partials/_portfolio.scss */
 .article > img {
   width: 360px;
   float: right;
