@@ -15,7 +15,7 @@ $(document).ready(function() {
         $.each(data.reverse(), function(i, val) {
           var imageName = val.images.hidpi || val.images.normal;
 
-          $('#shots').append(
+          $('#shots').prepend(
             '<a class="shot" target="_blank" href="' +
               val.html_url +
               '" title="' +
