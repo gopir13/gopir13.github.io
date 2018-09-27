@@ -2,7 +2,13 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="User Experience designer & front end developer. Have a passion for pixel perfect, minimal & easy to use interfaces. Also love visual oriented html / css / jquery.">
+  <meta name="keywords" content="UX Designer, UI Designer, World's best designer portfolio, Best portfolio, Personal portfolio, ">
+  <meta name="author" content="Gopi Raja" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Gopi Raja's Portfolio</title>
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
@@ -45,7 +51,25 @@
       </a>
     </div>
   </div>
-  <div class="wrapper homescreen">
+  <!-- <ul class="mobile-footer">
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#design">Design</a></li>
+    <li><a href="#full-stack">Full-stack project</a></li>
+    <li><a href="#electronics">Electronics</a></li>
+    <li><a href="#photography">Photography</a></li>
+    <li><a href="#biography">Biography</a></li>
+  </ul> -->
+
+  <div class="mobile-footer">
+    <button class="tablinks active" onclick="openMenu(event, 'home')">Home</button>
+    <button class="tablinks" onclick="openMenu(event, 'design')">Design</button>
+    <button class="tablinks" onclick="openMenu(event, 'full-stack')">Full-stack project</button>
+    <button class="tablinks" onclick="openMenu(event, 'electronics')">Electronics</button>
+    <button class="tablinks" onclick="openMenu(event, 'photography')">Photography</button>
+    <!-- <button class="tablinks" onclick="openMenu(event, 'biography')">Biography</button> -->
+  </div>
+
+  <div class="wrapper homescreen tabcontent" id="home">
     <div class="container">
       <div class="photo">
         <img src="./assets/images/gopiraja.png" />
@@ -70,15 +94,17 @@
   </div>
   <div class="wrapper portfolio" id="portfolio">
     <div class="navigation">
-      <img src="./assets/images/Gopiraja-logo.svg" class="logo" width="79" />
+      <a href="/">
+        <img src="./assets/images/Gopiraja-logo.svg" class="logo" width="79" />
+      </a>
 
-      <!-- <ul class="menu">
+      <ul class="menu">
         <li class="active"><a href="#design">Design</a></li>
         <li><a href="#full-stack">Full-stack project</a></li>
         <li><a href="#electronics">Electronics</a></li>
         <li><a href="#photography">Photography</a></li>
-        <li><a href="#biography">Biography</a></li>
-      </ul> -->
+        <!-- <li><a href="#biography">Biography</a></li> -->
+      </ul>
 
       <div class="social-links">
         <a href="https://dribbble.com/gopiraja" target="_blank">
@@ -103,17 +129,91 @@
         <h2>Some of my shots from dribbble</h2>
         <div id="shots"></div>
       </div>
-      <!-- <div id="full-stack">
-        <h2>I design meaningful experiances</h2>
-        <span style="height:100vh; width:100%; background:red; display:inline-block;"></span>
+      <div id="full-stack" class="tabcontent">
+        <h2>Itsmybio.me</h2>
+
+        <div class="article">
+          <img src="./assets/images/itsmybio.jpg" />
+          <h3>Problem Statement:</h3>
+
+          <p>Most of my friends were facing difficulties in preparing resume, CV or sharing a story of their
+            experiences when trying for an interview. I thought of making a research on this and build a platform that
+            help share the experiences in the form of a story and also their portfolio. </p>
+
+          <h3>Solution:</h3>
+          <p>Had a detailed research of what the placement officers or the hiring managers expect and what kind of
+            representation of the works will be easier for them to understand better. Then developed a platform when
+            one can share his experiences in the form of a timeline which would also be a kind of a storyboard and also
+            share his portfolio easily.</p>
+
+          <h3>How it works:</h3>
+          <p>
+            Itsmybio.me is a SPA (single page app) and implemented using Firebase as back-end and React in
+            front-end.
+          </p>
+          <p>
+            Required elements and related styles in the currect viewport only loaded in the DOM which makes the whole
+            app
+            efficient and perform better even in low GPU.
+          </p>
+
+          <p>Checkout <a href="https://itsmybio.me/gopiraja" target="_blank">my profile</a> on <a href="https://itsmybio.me/"
+              target="_blank">Itsmybio.me</a></p>
+        </div>
       </div>
-      <div id="electronics">
-        <span style="height:100vh; width:100%; background:green; display:inline-block;"></span>
+      <div id="electronics" class="tabcontent">
+        <h2>Wireless leather jacket</h2>
+        <div class="article">
+          <img src="./assets/images/jacket.jpg" />
+          <h3>Problem Statement:</h3>
+          <p>For Bike riders, There are issues with visibility from distance. especially in the night time. Which can
+            put the rider's life in danger.</p>
+
+          <h3>Solution:</h3>
+          <p>Wanted to make a biker jacket with better protection, better visibility and better comfort.</p>
+          <p>Started with researching about the ways to make and ended up with Arduino, infrared sensors and bunch
+            of
+            LED lights.</p>
+
+          <h3>How it works?</h3>
+          <p>A transistor will be connected with the bike, that’ll detect and send signal when the indicator is On.
+            A receiver is located on jacket which will receive the signal and switch On/Off the lights.
+            Arduino will manage connections between switches, transistor and receivers.</p>
+
+          <p>After using couple of there is a another problem, the body heat is not ventilated properly and I live in
+            Chennai, for the climate here, it’ll become intolerable. so I decided to put a couple of fans which can
+            circulate the air inside the jacket and keep the temperature cool. everything is operated from a 3000mAH
+            lithium-polimer battery</p>
+        </div>
       </div>
-      <div id="photography">
-        <span style="height:100vh; width:100%; background:blue; display:inline-block;"></span>
+      <div id="photography" class="tabcontent">
+        <h2>I like to take pictures which can tell stories,<br /> sometimes without stories too 🤪</h2>
+
+        <img src="./assets/images/photography/017.jpg" />
+        <img src="./assets/images/photography/001.jpg" />
+        <img src="./assets/images/photography/021.jpg" />
+        <img src="./assets/images/photography/022.jpg" />
+        <img src="./assets/images/photography/002.jpg" />
+        <img src="./assets/images/photography/003.jpg" />
+        <img src="./assets/images/photography/018.jpg" />
+        <img src="./assets/images/photography/019.jpg" />
+        <img src="./assets/images/photography/020.jpg" />
+        <img src="./assets/images/photography/004.jpg" />
+        <img src="./assets/images/photography/005.jpg" />
+        <img src="./assets/images/photography/006.jpg" />
+        <img src="./assets/images/photography/007.jpg" />
+        <img src="./assets/images/photography/008.jpg" />
+        <img src="./assets/images/photography/009.jpg" />
+        <img src="./assets/images/photography/010.jpg" />
+        <img src="./assets/images/photography/011.jpg" />
+        <img src="./assets/images/photography/012.jpg" />
+        <img src="./assets/images/photography/013.jpg" />
+        <img src="./assets/images/photography/014.jpg" />
+        <img src="./assets/images/photography/015.jpg" />
+        <img src="./assets/images/photography/016.jpg" />
+        <img src="./assets/images/photography/023.jpg" />
       </div>
-      <div id="biography">
+      <!-- <div id="biography" class="tabcontent">
         <span style="height:100vh; width:100%; background:pink; display:inline-block;"></span>
       </div> -->
     </div>
@@ -122,5 +222,21 @@
 
 <script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
 <script src="./assets/javascripts/gopiraja.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30660819-1']);
+  _gaq.push(['_setDomainName', 'gopir13.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 </html>

@@ -55,9 +55,11 @@
   .wrapper {
     width: 100vw;
     height: auto;
+    margin-bottom: 7.99vh;
   }
   .portfolio {
     margin-top: 0;
+    min-height: auto;
 
     & > .navigation {
       display: none;
@@ -69,8 +71,9 @@
         padding: 0;
 
         & h2 {
-          font-size: 6vw;
+          font-size: 8vw;
           margin: 5vh 5vw 2vh;
+          font-weight: bold;
         }
       }
 
@@ -78,7 +81,24 @@
         & > a {
           width: 100%;
         }
+
+        &:hover > a {
+          @include opacity(1);
+          @include filter(grayscale(0));
+        }
       }
+    }
+  }
+
+  .article {
+    & > img {
+      width: 100vw;
+      float: none;
+      margin: 0;
+    }
+    & > p {
+      padding: 5vw;
+      margin: 0;
     }
   }
 
@@ -129,6 +149,39 @@
         }
       }
     }
+  }
+
+  .mobile-footer {
+    position: fixed;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8vh;
+    z-index: 9;
+    overflow: auto;
+    white-space: nowrap;
+    background: #ffffff;
+
+    & button.tablinks {
+      color: $darkercolor;
+      text-decoration: none;
+      padding: 2.3vh 5vw;
+      font-size: 4vw;
+      background: #ffffff;
+      outline: none;
+      border: 0;
+      border-top: 2px solid #ffffff;
+
+      &.active {
+        border-top: 2px solid $brandcolor;
+        color: $brandcolor;
+      }
+    }
+  }
+
+  .portfolio > .content > div.tabcontent {
+    display: none;
   }
 }
 
