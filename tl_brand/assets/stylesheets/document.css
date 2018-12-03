@@ -44,8 +44,9 @@ html, body{
 }
 
 .logo-revealing .section > img{
-max-width: 70%;
-margin-right: 30px;
+/* max-width: 70%;
+margin-right: 30px; */
+width: 100%;
 }
 .logo-revealing .section > div{
     
