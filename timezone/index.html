@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script src="./moment.js" type="text/javascript"></script>
+<script src="./moment-timezone-with-data.js" type="text/javascript"></script>
+
+<style>
+    body{
+font-family: sans-serif;
+    }
+    div{
+        margin: 20px;
+    }
+    p{
+        margin: 0;
+    }
+    strong{
+        display: inline-block;
+        min-width: 250px;
+    }
+</style>
+</head>
+
+<body>
+
+        <div><strong id="demo"></strong> - Kolkata</div>
+        <div><strong id="demo2"></strong> - Los_Angeles</div>
+
+</body>
+
+<script>
+
+    format = "ll LTS z";
+    var myVar = setInterval(myTimer, 1000);
+
+    function myTimer() {
+        var timestamp = Date.now();
+
+        var a = moment.tz(timestamp, "Asia/Kolkata").format(format);
+        var c = moment.tz(timestamp, "America/Los_Angeles").format(format);
+
+        document.getElementById("demo").innerHTML = a;
+        document.getElementById("demo2").innerHTML = c;
+
+        console.log('timestamp', timestamp);
+        console.log("Kolkata", a);
+        console.log('Los_Angeles',c);
+        console.log("Guess", moment.tz.guess());
+        console.log("----------------------");
+
+    }
+        
+    
+    </script>
+
+</html>
