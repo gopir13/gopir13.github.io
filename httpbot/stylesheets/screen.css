@@ -1,0 +1,362 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_components.scss */
+h1 {
+  font-weight: 700;
+  font-size: 42px;
+  color: #1F2126;
+  line-height: 48px;
+  margin: 45px 0;
+}
+
+/* line 9, ../sass/partials/_components.scss */
+h5 {
+  color: #236DF0;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+/* line 15, ../sass/partials/_components.scss */
+.btn {
+  text-decoration: none;
+  -moz-box-shadow: 2px 2px 4px 0 rgba(31, 33, 38, 0.15);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(31, 33, 38, 0.15);
+  box-shadow: 2px 2px 4px 0 rgba(31, 33, 38, 0.15);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 45px;
+  padding: 12px 20px 0;
+  display: inline-block;
+}
+/* line 23, ../sass/partials/_components.scss */
+.btn.btn-default {
+  background: #FFFFFF;
+  border: 1px solid #1F2126;
+  color: #1F2126;
+}
+/* line 28, ../sass/partials/_components.scss */
+.btn.btn-primary {
+  background: #236DF0;
+  border: 1px solid #236DF0;
+  color: #fff;
+}
+/* line 34, ../sass/partials/_components.scss */
+.btn.btn-large {
+  font-size: 18px;
+  font-weight: 700;
+  height: 55px;
+  padding: 16px 30px 0;
+}
+
+/* line 1, ../sass/partials/_layout.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #1F2126;
+}
+
+/* line 7, ../sass/partials/_layout.scss */
+* {
+  box-sizing: border-box;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+/* line 13, ../sass/partials/_layout.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 18, ../sass/partials/_layout.scss */
+header {
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+}
+/* line 26, ../sass/partials/_layout.scss */
+header.scrolled {
+  -moz-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  -webkit-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  padding: 15px 0;
+}
+/* line 31, ../sass/partials/_layout.scss */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 37, ../sass/partials/_layout.scss */
+header .container > div > img {
+  float: left;
+}
+/* line 40, ../sass/partials/_layout.scss */
+header .container > div > div {
+  margin: 16px 0 0 65px;
+}
+/* line 43, ../sass/partials/_layout.scss */
+header .container > div > div > .brand_name, header .container > div > div > .brand_tagline {
+  display: inline-block;
+  width: 100%;
+}
+/* line 48, ../sass/partials/_layout.scss */
+header .container > div > div > .brand_name {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1F2126;
+  margin: 0 0 10px;
+}
+/* line 54, ../sass/partials/_layout.scss */
+header .container > div > div > .brand_tagline {
+  color: rgba(31, 33, 38, 0.65);
+}
+
+/* line 62, ../sass/partials/_layout.scss */
+.content-wrapper {
+  max-width: 970px;
+  margin: 124px auto 0;
+  display: flex;
+}
+/* line 68, ../sass/partials/_layout.scss */
+.content-wrapper > div .features {
+  margin: 90px 0;
+}
+/* line 71, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+/* line 76, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble {
+  width: 270px;
+  padding: 15px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+/* line 82, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble:hover, .content-wrapper > div .features .bubble-wrapper .bubble.active {
+  background: #FFFFFF;
+  -moz-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  -webkit-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 89, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble > img {
+  width: 90px;
+  height: 75px;
+  display: inline-block;
+  background: url(../images/sprite.png) no-repeat;
+  background-size: 540px;
+}
+/* line 96, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble > span {
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0;
+}
+/* line 105, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.postman > img {
+  background-position: 0px 0px;
+}
+/* line 106, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.history > img {
+  background-position: -90px 0px;
+}
+/* line 107, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.auto_complete > img {
+  background-position: -180px 0px;
+}
+/* line 108, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.authentication > img {
+  background-position: -270px 0px;
+}
+/* line 109, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.pretty_responses > img {
+  background-position: -360px 0px;
+}
+/* line 110, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.environments > img {
+  background-position: -450px 0px;
+}
+/* line 112, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.favorites > img {
+  background-position: 0px -90px;
+}
+/* line 113, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.export > img {
+  background-position: -90px -90px;
+}
+/* line 114, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.scripts_tests > img {
+  background-position: -180px -90px;
+}
+/* line 115, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.request_chaining > img {
+  background-position: -270px -90px;
+}
+/* line 116, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.api_import > img {
+  background-position: -360px -90px;
+}
+/* line 117, ../sass/partials/_layout.scss */
+.content-wrapper > div .features .bubble-wrapper .bubble.safari > img {
+  background-position: -450px -90px;
+}
+/* line 123, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display {
+  margin-left: 30px;
+  min-width: 368px;
+}
+/* line 127, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img {
+  margin-right: -30px;
+  position: fixed;
+}
+/* line 131, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature {
+  background: url(../images/features/screen01.png) no-repeat;
+  background-size: 100%;
+  width: 322px;
+  height: 702px;
+  margin: 22px 0 0 24px;
+  z-index: -1;
+}
+/* line 140, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.postman {
+  background-image: url(../images/features/screen01.png);
+}
+/* line 141, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.history {
+  background-image: url(../images/features/screen02.png);
+}
+/* line 142, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.auto_complete {
+  background-image: url(../images/features/screen03.png);
+}
+/* line 143, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.authentication {
+  background-image: url(../images/features/screen04.png);
+}
+/* line 144, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.pretty_responses {
+  background-image: url(../images/features/screen05.png);
+}
+/* line 145, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.environments {
+  background-image: url(../images/features/screen06.png);
+}
+/* line 147, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.favorites {
+  background-image: url(../images/features/screen07.png);
+}
+/* line 148, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.export {
+  background-image: url(../images/features/screen08.png);
+}
+/* line 149, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.scripts_tests {
+  background-image: url(../images/features/screen09.png);
+}
+/* line 150, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.request_chaining {
+  background-image: url(../images/features/screen10.png);
+}
+/* line 151, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.api_import {
+  background-image: url(../images/features/screen11.png);
+}
+/* line 152, ../sass/partials/_layout.scss */
+.content-wrapper .mobile-display > img.feature.safari {
+  background-image: url(../images/features/screen12.png);
+}
+
+/* line 158, ../sass/partials/_layout.scss */
+.footer {
+  margin: 45px auto;
+  max-width: 970px;
+  color: rgba(31, 33, 38, 0.65);
+}

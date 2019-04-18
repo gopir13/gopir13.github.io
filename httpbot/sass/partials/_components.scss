@@ -1,0 +1,40 @@
+h1{
+    font-weight: $Bold;
+    font-size: 42px;
+    color: $BlackColor;
+    line-height: 48px;
+    margin: 45px 0;
+}
+
+h5{
+    color: $BlueColor;
+    font-weight: $Bold;
+    margin: 0 0 30px;
+}
+
+.btn{
+    text-decoration: none;
+    @include box-shadow(2px 2px 4px 0 rgba($BlackColor,0.15));
+    @include border-radius(5px);
+    height: 45px;
+    padding: 12px 20px 0;
+    display: inline-block;
+    
+    &.btn-default{
+        background: #FFFFFF;
+        border: 1px solid $BlackColor;
+        color: $BlackColor;
+    }
+    &.btn-primary{
+        background: $BlueColor;
+        border: 1px solid $BlueColor;
+        color: #fff;
+    }
+    
+    &.btn-large{
+        font-size: 18px;
+        font-weight: $Bold;
+        height: 55px;
+        padding: 16px 30px 0;
+    }
+}

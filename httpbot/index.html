@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTPBot :: Powerful HTTP Client for iOS</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/ico">
+    <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="images/logo.svg" width="55" />
+                <div>
+                    <span class="brand_name">HTTPBot</span>
+                    <span class="brand_tagline">Powerful HTTP Client for iOS.</span>
+                </div>
+            </div>
+
+            <a class="btn btn-default" href="">Download from iTunes</a> 
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <div>
+                <h1>Postman integration, Collections, Environments and more make HTTPBot one of the most feature-packed HTTP clients on iOS.</h1>
+
+                <a class="btn btn-primary btn-large" href="">Download from iTunes</a>
+
+                <div class="features">
+                    <h5>What HTTPBot offer</h5>
+
+                    <div class="bubble-wrapper">
+                        <div class="bubble postman active" name="postman">
+                            <img src="images/blank.png"/>
+                            <span>Postman Support</span>
+                            <p>HTTPBot supports Postman Collections out of the box, so you can get started straightaway, by importing them - via Dropbox, direct link and more.</p>
+                        </div>
+
+                        <div class="bubble history" name="history">
+                            <img src="images/blank.png"/>
+                            <span>History</span>
+                            <p>Requests you make are saved so that you can come back and review at any time. Add notes for clarity.</p>
+                        </div>
+
+                        <div class="bubble auto_complete" name="auto_complete">
+                            <img src="images/blank.png"/>
+                            <span>Auto-Complete</span>
+                            <p>HTTPBot autocompletes headers and params with existing as well as commonly-used values.</p>
+                        </div>
+
+                        <div class="bubble authentication" name="authentication">
+                            <img src="images/blank.png"/>
+                            <span>Authentication</span>
+                            <p>Authenticate your requests with Basic Auth, OAuth 1.0 or OAuth 2.0.</p>
+                        </div>
+
+                        <div class="bubble pretty_responses" name="pretty_responses">
+                            <img src="images/blank.png"/>
+                            <span>Pretty Responses</span>
+                            <p>Responses are pretty-printed according to content-type so that there's no mucking around unformatted plain-text.</p>
+                        </div>
+
+                        <div class="bubble environments" name="environments">
+                            <img src="images/blank.png"/>
+                            <span>Environments</span>
+                            <p>Global and Environment variables allow you to re-use frequently used parameters easily.</p>
+                        </div>
+
+                        <div class="bubble favorites" name="favorites">
+                            <img src="images/blank.png"/>
+                            <span>Favorites</span>
+                            <p>Save frequently-made requests as favorites, for faster access.</p>
+                        </div>
+
+                        <div class="bubble export" name="export">
+                            <img src="images/blank.png"/>
+                            <span>cURL Export</span>
+                            <p>Export requests as cURL to share them easily.</p>
+                        </div>
+
+                        <div class="bubble scripts_tests" name="scripts_tests">
+                            <img src="images/blank.png"/>
+                            <span>Scripts & Tests</span>
+                            <p>Run custom scripts and tests - imported from Postman too - with your requests.</p>
+                        </div>
+
+                        <div class="bubble request_chaining" name="request_chaining">
+                            <img src="images/blank.png"/>
+                            <span>Request Chaining</span>
+                            <p>Chain multiple requests together, to recreate production scenarios.</p>
+                        </div>
+
+                        <div class="bubble api_import" name="api_import">
+                            <img src="images/blank.png"/>
+                            <span>API Import</span>
+                            <p>Import live third-party API definitions, and get started using them in no time.</p>
+                        </div>
+
+                        <div class="bubble safari" name="safari">
+                            <img src="images/blank.png"/>
+                            <span>Safari Extension</span>
+                            <p>Make requests straight from Safari using the share extension.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-display">
+                <img src="images/mobile.png" width="398" />
+                <img src="images/blank.png" class="feature" />
+            </div>
+        </div>
+        
+        <div class="footer">
+                © 2019 Arvindh Sukumar
+            </div>
+    </div>
+    
+</body>    
+    
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        var header = $("header");
+        
+        $('.bubble').click(function(){
+            $('.bubble').removeClass('active');
+            $(this).addClass('active');
+            
+            var attr = $(this).attr('name');
+            
+            $('.mobile-display .feature').attr('class', 'feature');
+            
+            $('.mobile-display .feature').addClass(attr);
+        });
+        
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 200) {
+                header.addClass("scrolled");
+            } else {
+                header.removeClass("scrolled");
+            }
+            
+            if (scroll >= 450) {
+                header.find('.btn').removeClass('btn-default').addClass('btn-primary');
+            } else {
+                header.find('.btn').addClass('btn-default').removeClass('btn-primary');
+            }
+        });
+        
+    </script>
+
+</html>
