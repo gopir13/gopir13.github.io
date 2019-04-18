@@ -119,18 +119,17 @@ header{
     
     & .mobile-display{
         margin-left: 30px;
-        min-width: 368px;
+        min-width: 350px;
         
         & > img{
-            margin-right: -30px;
             position: fixed;
             
             &.feature{
                 background: url(../images/features/screen01.png) no-repeat;
                 background-size: 100%;
-                width: 322px;
-                height: 702px;
-                margin: 22px 0 0 24px;
+                width: 328px;
+                height: 716px;
+                margin: 9px 0 0 11px;
                 z-index: -1;
                 
                 

@@ -284,72 +284,71 @@ header .container > div > div > .brand_tagline {
 /* line 120, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display {
   margin-left: 30px;
-  min-width: 368px;
+  min-width: 350px;
 }
 /* line 124, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img {
-  margin-right: -30px;
   position: fixed;
 }
-/* line 128, ../sass/partials/_layout.scss */
+/* line 127, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature {
   background: url(../images/features/screen01.png) no-repeat;
   background-size: 100%;
-  width: 322px;
-  height: 702px;
-  margin: 22px 0 0 24px;
+  width: 328px;
+  height: 716px;
+  margin: 9px 0 0 11px;
   z-index: -1;
 }
-/* line 137, ../sass/partials/_layout.scss */
+/* line 136, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.postman {
   background-image: url(../images/features/screen01.png);
 }
-/* line 138, ../sass/partials/_layout.scss */
+/* line 137, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.history {
   background-image: url(../images/features/screen02.png);
 }
-/* line 139, ../sass/partials/_layout.scss */
+/* line 138, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.auto_complete {
   background-image: url(../images/features/screen03.png);
 }
-/* line 140, ../sass/partials/_layout.scss */
+/* line 139, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.authentication {
   background-image: url(../images/features/screen04.png);
 }
-/* line 141, ../sass/partials/_layout.scss */
+/* line 140, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.pretty_responses {
   background-image: url(../images/features/screen05.png);
 }
-/* line 142, ../sass/partials/_layout.scss */
+/* line 141, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.environments {
   background-image: url(../images/features/screen06.png);
 }
-/* line 144, ../sass/partials/_layout.scss */
+/* line 143, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.favorites {
   background-image: url(../images/features/screen07.png);
 }
-/* line 145, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.export {
   background-image: url(../images/features/screen08.png);
 }
-/* line 146, ../sass/partials/_layout.scss */
+/* line 145, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.scripts_tests {
   background-image: url(../images/features/screen09.png);
 }
-/* line 147, ../sass/partials/_layout.scss */
+/* line 146, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.request_chaining {
   background-image: url(../images/features/screen10.png);
 }
-/* line 148, ../sass/partials/_layout.scss */
+/* line 147, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.api_import {
   background-image: url(../images/features/screen11.png);
 }
-/* line 149, ../sass/partials/_layout.scss */
+/* line 148, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.safari {
   background-image: url(../images/features/screen12.png);
 }
 
-/* line 155, ../sass/partials/_layout.scss */
+/* line 154, ../sass/partials/_layout.scss */
 .footer {
   margin: 45px auto;
   max-width: 970px;
