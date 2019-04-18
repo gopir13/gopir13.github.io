@@ -140,9 +140,10 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 header {
   padding: 30px 0;
   position: fixed;
@@ -151,68 +152,62 @@ header {
   top: 0;
   background: #fff;
 }
-/* line 26, ../sass/partials/_layout.scss */
-header.scrolled {
-  -moz-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
-  -webkit-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
-  box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
-  padding: 15px 0;
-}
-/* line 31, ../sass/partials/_layout.scss */
+/* line 27, ../sass/partials/_layout.scss */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 37, ../sass/partials/_layout.scss */
+/* line 33, ../sass/partials/_layout.scss */
 header .container > div > img {
   float: left;
 }
-/* line 40, ../sass/partials/_layout.scss */
+/* line 36, ../sass/partials/_layout.scss */
 header .container > div > div {
   margin: 16px 0 0 65px;
 }
-/* line 43, ../sass/partials/_layout.scss */
+/* line 39, ../sass/partials/_layout.scss */
 header .container > div > div > .brand_name, header .container > div > div > .brand_tagline {
   display: inline-block;
   width: 100%;
 }
-/* line 48, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 header .container > div > div > .brand_name {
   font-weight: 700;
   font-size: 22px;
   color: #1F2126;
   margin: 0 0 10px;
 }
-/* line 54, ../sass/partials/_layout.scss */
+/* line 50, ../sass/partials/_layout.scss */
 header .container > div > div > .brand_tagline {
   color: rgba(31, 33, 38, 0.65);
 }
 
-/* line 62, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .content-wrapper {
   max-width: 970px;
   margin: 124px auto 0;
   display: flex;
 }
-/* line 68, ../sass/partials/_layout.scss */
+/* line 64, ../sass/partials/_layout.scss */
 .content-wrapper > div .features {
   margin: 90px 0;
 }
-/* line 71, ../sass/partials/_layout.scss */
+/* line 67, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
-/* line 76, ../sass/partials/_layout.scss */
+/* line 72, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble {
-  width: 270px;
+  min-width: 270px;
+  flex: 1;
   padding: 15px;
   line-height: 22px;
   margin-bottom: 15px;
 }
-/* line 82, ../sass/partials/_layout.scss */
+/* line 79, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble:hover, .content-wrapper > div .features .bubble-wrapper .bubble.active {
   background: #FFFFFF;
   -moz-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
@@ -223,7 +218,7 @@ header .container > div > div > .brand_tagline {
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 89, ../sass/partials/_layout.scss */
+/* line 86, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble > img {
   width: 90px;
   height: 75px;
@@ -231,72 +226,72 @@ header .container > div > div > .brand_tagline {
   background: url(../images/sprite.png) no-repeat;
   background-size: 540px;
 }
-/* line 96, ../sass/partials/_layout.scss */
+/* line 93, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble > span {
   font-weight: 700;
   display: inline-block;
   width: 100%;
   margin: 15px 0;
 }
-/* line 105, ../sass/partials/_layout.scss */
+/* line 102, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.postman > img {
   background-position: 0px 0px;
 }
-/* line 106, ../sass/partials/_layout.scss */
+/* line 103, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.history > img {
   background-position: -90px 0px;
 }
-/* line 107, ../sass/partials/_layout.scss */
+/* line 104, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.auto_complete > img {
   background-position: -180px 0px;
 }
-/* line 108, ../sass/partials/_layout.scss */
+/* line 105, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.authentication > img {
   background-position: -270px 0px;
 }
-/* line 109, ../sass/partials/_layout.scss */
+/* line 106, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.pretty_responses > img {
   background-position: -360px 0px;
 }
-/* line 110, ../sass/partials/_layout.scss */
+/* line 107, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.environments > img {
   background-position: -450px 0px;
 }
-/* line 112, ../sass/partials/_layout.scss */
+/* line 109, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.favorites > img {
   background-position: 0px -90px;
 }
-/* line 113, ../sass/partials/_layout.scss */
+/* line 110, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.export > img {
   background-position: -90px -90px;
 }
-/* line 114, ../sass/partials/_layout.scss */
+/* line 111, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.scripts_tests > img {
   background-position: -180px -90px;
 }
-/* line 115, ../sass/partials/_layout.scss */
+/* line 112, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.request_chaining > img {
   background-position: -270px -90px;
 }
-/* line 116, ../sass/partials/_layout.scss */
+/* line 113, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.api_import > img {
   background-position: -360px -90px;
 }
-/* line 117, ../sass/partials/_layout.scss */
+/* line 114, ../sass/partials/_layout.scss */
 .content-wrapper > div .features .bubble-wrapper .bubble.safari > img {
   background-position: -450px -90px;
 }
-/* line 123, ../sass/partials/_layout.scss */
+/* line 120, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display {
   margin-left: 30px;
   min-width: 368px;
 }
-/* line 127, ../sass/partials/_layout.scss */
+/* line 124, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img {
   margin-right: -30px;
   position: fixed;
 }
-/* line 131, ../sass/partials/_layout.scss */
+/* line 128, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature {
   background: url(../images/features/screen01.png) no-repeat;
   background-size: 100%;
@@ -305,58 +300,99 @@ header .container > div > div > .brand_tagline {
   margin: 22px 0 0 24px;
   z-index: -1;
 }
-/* line 140, ../sass/partials/_layout.scss */
+/* line 137, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.postman {
   background-image: url(../images/features/screen01.png);
 }
-/* line 141, ../sass/partials/_layout.scss */
+/* line 138, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.history {
   background-image: url(../images/features/screen02.png);
 }
-/* line 142, ../sass/partials/_layout.scss */
+/* line 139, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.auto_complete {
   background-image: url(../images/features/screen03.png);
 }
-/* line 143, ../sass/partials/_layout.scss */
+/* line 140, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.authentication {
   background-image: url(../images/features/screen04.png);
 }
-/* line 144, ../sass/partials/_layout.scss */
+/* line 141, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.pretty_responses {
   background-image: url(../images/features/screen05.png);
 }
-/* line 145, ../sass/partials/_layout.scss */
+/* line 142, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.environments {
   background-image: url(../images/features/screen06.png);
 }
-/* line 147, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.favorites {
   background-image: url(../images/features/screen07.png);
 }
-/* line 148, ../sass/partials/_layout.scss */
+/* line 145, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.export {
   background-image: url(../images/features/screen08.png);
 }
-/* line 149, ../sass/partials/_layout.scss */
+/* line 146, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.scripts_tests {
   background-image: url(../images/features/screen09.png);
 }
-/* line 150, ../sass/partials/_layout.scss */
+/* line 147, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.request_chaining {
   background-image: url(../images/features/screen10.png);
 }
-/* line 151, ../sass/partials/_layout.scss */
+/* line 148, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.api_import {
   background-image: url(../images/features/screen11.png);
 }
-/* line 152, ../sass/partials/_layout.scss */
+/* line 149, ../sass/partials/_layout.scss */
 .content-wrapper .mobile-display > img.feature.safari {
   background-image: url(../images/features/screen12.png);
 }
 
-/* line 158, ../sass/partials/_layout.scss */
+/* line 155, ../sass/partials/_layout.scss */
 .footer {
   margin: 45px auto;
   max-width: 970px;
   color: rgba(31, 33, 38, 0.65);
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 9, ../sass/partials/_responsive.scss */
+  .content-wrapper > div .features .bubble-wrapper {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 15, ../sass/partials/_responsive.scss */
+  .content-wrapper {
+    margin-top: 0;
+  }
+  /* line 18, ../sass/partials/_responsive.scss */
+  .content-wrapper .mobile-display {
+    display: none;
+  }
+
+  /* line 22, ../sass/partials/_responsive.scss */
+  header {
+    position: relative;
+  }
+  /* line 26, ../sass/partials/_responsive.scss */
+  header .container .btn-default {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 34, ../sass/partials/_responsive.scss */
+  header.scrolled {
+    -moz-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+    -webkit-box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+    box-shadow: 2px 2px 20px 0 rgba(31, 33, 38, 0.15);
+    padding: 15px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 42, ../sass/partials/_responsive.scss */
+  h1 {
+    font-size: 32px;
+  }
 }

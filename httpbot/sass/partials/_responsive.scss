@@ -1,0 +1,45 @@
+//@media only screen 
+//and (min-device-width : 768px) 
+//and (max-device-width : 1024px) {
+//    
+//}
+
+
+@media only screen and (max-width : 1024px) {
+    .content-wrapper > div .features .bubble-wrapper{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .content-wrapper{
+        margin-top: 0;
+        
+        & .mobile-display{
+            display: none;
+        }
+    }
+    header{
+        position: relative;
+        
+        
+        & .container .btn-default{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    header{
+        &.scrolled{
+            @include box-shadow(2px 2px 20px 0 rgba(31,33,38,0.15));
+            padding: 15px 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    h1{
+        font-size: 32px;
+    }
+}
