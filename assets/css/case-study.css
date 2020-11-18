@@ -1,0 +1,42 @@
+/* line 4, ../../sass/case-study.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../sass/case-study.scss */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333745;
+}
+
+/* line 16, ../../sass/case-study.scss */
+.wrapper {
+  display: flex;
+}
+/* line 19, ../../sass/case-study.scss */
+.wrapper .menu {
+  margin: 30px;
+  margin-right: 60px;
+}
+/* line 23, ../../sass/case-study.scss */
+.wrapper .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 29, ../../sass/case-study.scss */
+.wrapper .menu ul li > ul {
+  margin-bottom: 30px;
+}
+/* line 36, ../../sass/case-study.scss */
+.wrapper .body {
+  flex: 1;
+}
+
+/* line 41, ../../sass/case-study.scss */
+iframe {
+  border: 0;
+}
