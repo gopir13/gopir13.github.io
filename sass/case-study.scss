@@ -4,21 +4,32 @@
 html, body{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body {
     font-family: $sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.5em;
     color: $darkercolor;
   }
 
 .wrapper{
     display: flex;
+    height: 100%;
+
+    & a{
+        color: $darkercolor;
+        font-size: 18px;
+    }
 
     & .menu{
         margin: 30px;
         margin-right: 60px;
+
+        & span{
+            opacity: .5;
+        }
 
         & ul{
             list-style: none;
@@ -35,9 +46,58 @@ body {
 
     & .body{
         flex: 1;
+        height: 100%;
+        overflow: auto;
     }
-}
 
-iframe{
-    border: 0;
+    & .section{
+        margin: 0 0 16*15px;
+        display: flex;
+        flex-direction: column;
+
+        & .subsection{
+            margin: 0 0 8*15px;
+            display: flex;
+            flex-direction: column;
+
+            & iframe{
+                border: 0;
+                width: calc(100% - 200px);
+                flex: 1;
+            }
+        }
+
+        & .qa{
+            margin: 1*15px 0;
+
+            & p:first-child{
+                font-weight: 600;
+            }
+        }
+    }
+
+    & h2, & h3, & h4{
+        display: inline-block;
+        width: 100%;
+    }
+
+    & h2{
+        font-size: 8em;
+        margin: 8*15px 0;
+        font-weight: 200;
+    }
+    & h3{
+        font-size: 4em;
+        margin: 4*15px 0;
+        font-weight: 400;
+    }
+    & h4{
+        font-size: 2em;
+        margin: 2*15px 0;
+        font-weight: 800;
+    }
+    & p{
+        font-size: 1em;
+        margin: 0;
+    }
 }

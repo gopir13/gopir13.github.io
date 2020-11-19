@@ -2,41 +2,103 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-/* line 9, ../../sass/case-study.scss */
+/* line 10, ../../sass/case-study.scss */
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5em;
   color: #333745;
 }
 
-/* line 16, ../../sass/case-study.scss */
+/* line 17, ../../sass/case-study.scss */
 .wrapper {
   display: flex;
+  height: 100%;
 }
-/* line 19, ../../sass/case-study.scss */
+/* line 21, ../../sass/case-study.scss */
+.wrapper a {
+  color: #333745;
+  font-size: 18px;
+}
+/* line 26, ../../sass/case-study.scss */
 .wrapper .menu {
   margin: 30px;
   margin-right: 60px;
 }
-/* line 23, ../../sass/case-study.scss */
+/* line 30, ../../sass/case-study.scss */
+.wrapper .menu span {
+  opacity: .5;
+}
+/* line 34, ../../sass/case-study.scss */
 .wrapper .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 29, ../../sass/case-study.scss */
+/* line 40, ../../sass/case-study.scss */
 .wrapper .menu ul li > ul {
   margin-bottom: 30px;
 }
-/* line 36, ../../sass/case-study.scss */
+/* line 47, ../../sass/case-study.scss */
 .wrapper .body {
   flex: 1;
+  height: 100%;
+  overflow: auto;
 }
-
-/* line 41, ../../sass/case-study.scss */
-iframe {
+/* line 53, ../../sass/case-study.scss */
+.wrapper .section {
+  margin: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 58, ../../sass/case-study.scss */
+.wrapper .section .subsection {
+  margin: 0 0 120px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 63, ../../sass/case-study.scss */
+.wrapper .section .subsection iframe {
   border: 0;
+  width: calc(100% - 200px);
+  flex: 1;
+}
+/* line 70, ../../sass/case-study.scss */
+.wrapper .section .qa {
+  margin: 15px 0;
+}
+/* line 73, ../../sass/case-study.scss */
+.wrapper .section .qa p:first-child {
+  font-weight: 600;
+}
+/* line 79, ../../sass/case-study.scss */
+.wrapper h2, .wrapper h3, .wrapper h4 {
+  display: inline-block;
+  width: 100%;
+}
+/* line 84, ../../sass/case-study.scss */
+.wrapper h2 {
+  font-size: 8em;
+  margin: 120px 0;
+  font-weight: 200;
+}
+/* line 89, ../../sass/case-study.scss */
+.wrapper h3 {
+  font-size: 4em;
+  margin: 60px 0;
+  font-weight: 400;
+}
+/* line 94, ../../sass/case-study.scss */
+.wrapper h4 {
+  font-size: 2em;
+  margin: 30px 0;
+  font-weight: 800;
+}
+/* line 99, ../../sass/case-study.scss */
+.wrapper p {
+  font-size: 1em;
+  margin: 0;
 }
