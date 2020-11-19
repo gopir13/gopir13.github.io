@@ -87,7 +87,7 @@ body {
             display: flex;
             flex-direction: column;
 
-            & .column-3{
+            & .column-3, & .column-2{
                 display: flex;
 
                 & > div{
@@ -105,10 +105,7 @@ body {
             }
 
             & .column-2{
-                display: flex;
-
                 & > div{
-                    flex: 1;
                     margin-right: 6*15px;
                 }
             }
@@ -148,6 +145,7 @@ body {
         font-size: 2em;
         margin: 2*15px 0;
         font-weight: 800;
+        line-height: 1.3em;
     }
     & p{
         font-size: 1em;
@@ -179,13 +177,21 @@ body {
     }
 }
 
-dl{
-    & dt{
-        margin-bottom: 15px;
-        float: left;
-        width: 250px;
+table{
+    text-align: left;
+    width: 95%;
+    margin-bottom: 3*15px;
+
+    & tr{
+
+        &:hover{
+            color: black;
+        }
     }
-    & dd{
-        margin: 0;
+
+    & th, & td{
+        vertical-align: top;
+        border-bottom: 1px solid rgba($darkercolor, 0.1);
+        font-size: 18px;
     }
 }
