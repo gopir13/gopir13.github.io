@@ -195,3 +195,22 @@ table{
         font-size: 18px;
     }
 }
+
+.block-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1220px) {
+    .block-mobile{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 100000;
+        padding: 15px;
+        background: $brandcolor;
+        color: white;
+        text-align: center;
+    }
+  }
